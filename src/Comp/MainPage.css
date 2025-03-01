@@ -1,0 +1,35 @@
+/* have the menu bar here - used as placeholder*/
+
+/* styling for main menu on the side of screen*/
+.menu{
+    padding: 10px 10px;
+    width: 400px; /* dimension size*/
+    height:200px; /* dimension size*/
+    color:black;
+    position: fixed;
+    top:350px;
+    display:flex;
+    flex-direction: column; /* vertical menu*/
+
+}
+
+/* used to display format of how list is presented */
+.menu ul{
+    list-style-type: none; /* used to eliminate bullet points*/
+    margin: 0; /*controls thickness of grey nav area */
+    padding: 0;
+}
+
+/* styles list items*/
+.menu li{
+    margin: 20px 30px; /*assigns space between list items*/
+    cursor: pointer; /* shows mouse pointer is over list item*/
+    font-size: 20px; /* text size*/
+
+}
+
+/* item underlined when mouse hovers over*/
+.menu li:hover{
+    text-decoration:underline;
+
+}

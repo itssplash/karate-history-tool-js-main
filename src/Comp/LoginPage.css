@@ -1,0 +1,111 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /* screen layout*/
+}
+
+/* manages screen size*/
+body,html {
+    font-family: Montserrat, sans-serif;
+    height: 100%;
+
+}
+/* page layout*/
+.page-container{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* screen size*/
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+.login-page{
+    text-align: center;
+   /* color: #D22F25;
+    margin-top: 0px; */
+
+}
+.login-page h1{
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* style of how the form is supposed to look*/
+.form-container{
+    max-width: 550px; /*controls form width size*/
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+
+}
+
+.login-form input{
+    width: 500px; /* text box width*/
+    padding: 10px; /* space inside text box*/
+    margin: 10px 0; /* space between text box*/
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* buttons position in form*/
+.button-container{
+    display: flex;
+    gap: 20px; /* gap between buttons*/
+    margin-top: 20px; /* gap between buttons and and text box*/
+
+}
+/* style of outline button*/
+.outline-button{
+    padding: 10px 90px;
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* when mouse hovers over button */
+.outline-button:hover{
+    background-color: antiquewhite;
+}
+
+/* style of red button*/
+.red-button{
+    padding: 10px 90px;
+    background-color: #D22F25;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* when mouse hovers over button */
+.red-button:hover{
+    background-color: darkred;
+
+}
+/* forgot password text style*/
+.forgot-password{
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: dimgrey;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* when mouse hovers over button */
+.forgot-password:hover{
+    text-decoration:underline;
+    color:red;
+}
+

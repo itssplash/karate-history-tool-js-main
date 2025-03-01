@@ -1,0 +1,134 @@
+/* have header, nav and footer here */
+
+#root{
+    min-height:100vh; /* controls size of window screen */
+    display:flex;
+    flex-direction: column;
+
+}
+/* styling for header section */
+.header{
+    display: flex;
+    justify-content: space-between; /* creates space between title and phone number */
+    background-color: #D22F25; /* red background*/
+    color: white; /* white text*/
+    padding: 2vh 5vw; /* red background dimensions */
+    align-items: center;
+}
+
+/* used to display Shuyokan Dojo to the left and number on the right of screen */
+.header-left h1 {
+    margin: 0;
+    font-size: 2.5vw; /* used to increase size of shuyokan dojo title*/
+}
+.header-right h1 {
+    margin:0;
+    font-size: 1.5vw;
+
+}
+
+/*styling for navigation bar underneath header */
+.navigation-bar {
+    background-color: rgba(0,0,0,0.21);
+    padding: 1vh 2vw;
+
+}
+
+/* used to display format of how list is presented  */
+.navigation-bar ul{
+    display: flex;
+    justify-content: center; /* shift list items to the center*/
+    list-style-type: none; /* used to eliminate bullet points*/
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+
+}
+
+/* styles list items */
+.navigation-bar li{
+    margin: 0 2vw; /* assigns space between list items*/
+    color: black; /* text displayed in white*/
+    cursor: pointer; /* shows mouse pointer is over list item*/
+    font-size: 1.2vw; /* text font size*/
+    font-family: Roboto, arial, sans-serif; /* text font*/
+    white-space: wrap;
+    position:relative;
+
+
+}
+
+/* item underlined when mouse hovers over*/
+.navigation-bar li:hover{
+    text-decoration:underline;
+}
+
+/* Styling for 'more' dropdown list */
+.more-dropdown-content{
+    display: none !important; /* used to not show when not hovered over more item*/
+    position: absolute;
+    background-color: white;
+    min-width: 4vh;
+    max-height: 50vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.more-dropdown-content li{
+    padding: 1vw;
+    white-space: nowrap;
+    color:black;
+    display:block;
+    font-family: monospace;
+    font-size: 1vw;
+}
+
+.more-dropdown:hover .more-dropdown-content{
+    display:block !important; /* used to show when hovered over more item*/
+}
+/* Main content area - not done */
+.main-area{
+    flex:1;
+    margin-top: 1.5vh;
+    padding: 2vh 2vw; /* controls position where text is position on window*/
+    text-align: center;
+    color: red;
+    font-size: 1vw;
+}
+
+/* styling for footer section */
+.footer{
+    display: flex;
+    background-color: black; /* black background*/
+    color: white; /* white text*/
+    padding: 6vh 5vw; /* size of black footer*/
+    bottom:0;
+    text-align: center; /* aligns text in the center*/
+    justify-content: left; /* shifts text towards the left*/
+    font-size: 1vw;
+    flex-wrap: wrap;
+}
+
+/* styling for social media icons */
+.icons{
+    display:flex;
+    gap: 1vw; /* gap between social media icons in the footer*/
+    padding: 0 15vw; /* positions icon to the center of footer*/
+
+}
+.icons a{
+    color:white; /* icon background */
+    font-size: 2vw; /* size of the icon*/
+    text-decoration: none;
+}
+
+/* styling for message icon - footer */
+ .message-icon{
+    display:flex;
+    padding: 0 40vw; /* positions icon to the right*/
+    color:red; /* icon background*/
+    font-size: 70px; /* size of the icon*/
+
+}
