@@ -1,7 +1,7 @@
 /* have the Main page here */
 
 import React from 'react';
-import NavigationBar from './NavigationBar.js';
+// import NavigationBar from './NavigationBar.js';
 import './Style.css';
 import './MainPage.css';
 

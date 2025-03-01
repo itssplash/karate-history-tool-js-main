@@ -27,7 +27,7 @@ export default function LoginPage() {
                                 Register
                             </button>
                         </div>
-                        <a href="#" className='forgot-password'>Forgot Password?</a>
+                        <a href="/www.google.com    " className='forgot-password'>Forgot Password?</a>
                     </div>
                 </>
             );
